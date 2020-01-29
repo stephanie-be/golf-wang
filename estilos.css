@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+	color: black;
+}
+
+.items {
+	font-family: arial, sans-serif;
+	font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+	background: #96daea;
+    padding: 10px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+
+	/*flex*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; /*elemento pasa abajo*/
+}
+
+header, section {
+	width: 100%;
+
+	/*flex */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#h-img {
+	width: 100%;
+}
+
+header img {
+	width: 100%;
+	margin: 15px 0px;
+}
+
+header nav {
+	width: 100%;
+	/*Flex*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+header nav a {
+    font-size: 26px;
+    font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+
+	/*Flex*/
+	flex-grow: 1; /*tamaño total*/
+}
+
+header nav a:hover {
+	color: #96daea;
+    transition: color .15s ease;
+}
+
+header #logo {
+    width: 35px;
+}
+
+section div {
+    width: 300px;
+	word-wrap: break-word;
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+
+section img {
+	width: 100%;
+	border: 1px solid black;
+}
+
+.video {
+	margin-top: 30px;
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+	/*Flex*/
+	display: flex;
+  	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.formbox {
+	text-align: center;
+	width: 70%;
+	margin: 30px 0px;
+}
+
+input, textarea, .submit{
+	vertical-align: top;
+	margin: 4px;
+	padding: 5px;
+	width: 300px;
+    border: 1px solid #000;
+    height: 35px;
+}
+
+.submit {
+	font-family: arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+    color: white;
+	background-color: #613B1A; 
+}
+
+.submit:hover {
+	background-color: #96daea;
+    transition: background-color .15s ease;
+    cursor: pointer;
+}
+
+.cred {
+	width: 100%;
+	justify-content: space-between;
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 800px){
+	header nav a {
+    	font-size: 1rem;
+	}
+
+	section {
+	justify-content: center;
+	}
+}
